@@ -9,7 +9,7 @@
         (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
             (normal-top-level-add-subdirs-to-load-path))))))
 
-(add-to-load-path "themes" "elpa")
+(add-to-load-path "elpa")
 
 
 ;;; パッケージ管理
@@ -33,8 +33,6 @@
 
 
 ;;; Emacsの見た目
-(setq custom-theme-directory "~/.emacs.d/themes/")
-;; (load-theme 'hoge t) ; カスタムテーマ
 (load-theme 'adwaita t)
 (menu-bar-mode -1) ; メニューバーを消す
 (tool-bar-mode -1) ; ツールバーを消す
